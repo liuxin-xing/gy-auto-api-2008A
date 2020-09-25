@@ -1,0 +1,3086 @@
+2020-09-23 16:56:42,304 - tools.report.log_tool - INFO - ----请求用时: 39.588 秒数
+2020-09-23 16:56:42,305 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 16:56:42,305 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzMjAyODAwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 16:56:42,340 - tools.report.log_tool - INFO - ----请求用时: 30.993 秒数
+2020-09-23 16:56:42,341 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/signup
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 79
+Content-Type: application/json
+
+b'{"phone": "15800589072", "pwd": "aaa123", "rePwd": "aaa123", "userName": "x1W"}'
+2020-09-23 16:56:42,341 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"注册成功；用户ID:16912","data":{"userName":"x1W","accoutId":16912,"cstId":16922,"userId":16912}}
+2020-09-23 16:56:42,373 - tools.report.log_tool - INFO - ----请求用时: 22.879 秒数
+2020-09-23 16:56:42,374 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "x1W"}'
+2020-09-23 16:56:42,374 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzMjAyODY5LCJ1c2VySWQiOjE2OTEyLCJ1c2VyTmFtZSI6IngxVyJ9","userName":"x1W"}}
+2020-09-23 16:56:42,416 - tools.report.log_tool - INFO - ----请求用时: 31.537 秒数
+2020-09-23 16:56:42,417 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/user/changepwd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzMjAyODY5LCJ1c2VySWQiOjE2OTEyLCJ1c2VyTmFtZSI6IngxVyJ9
+Content-Length: 83
+Content-Type: application/json
+
+b'{"newPwd": "aaa1234", "oldPwd": "aaa123", "reNewPwd": "aaa1234", "userName": "x1W"}'
+2020-09-23 16:56:42,417 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"修改成功1","data":""}
+2020-09-23 16:56:42,455 - tools.report.log_tool - INFO - ----请求用时: 30.162 秒数
+2020-09-23 16:56:42,455 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 37
+Content-Type: application/json
+
+b'{"pwd": "aaa1234", "userName": "x1W"}'
+2020-09-23 16:56:42,455 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzMjAyOTUxLCJ1c2VySWQiOjE2OTEyLCJ1c2VyTmFtZSI6IngxVyJ9","userName":"x1W"}}
+2020-09-23 16:56:42,497 - tools.report.log_tool - INFO - ----请求用时: 33.506 秒数
+2020-09-23 16:56:42,498 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/getBills?accountName=x1W
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+None
+2020-09-23 16:56:42,498 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"查询成功","data":[]}
+2020-09-23 16:56:42,543 - tools.report.log_tool - INFO - ----请求用时: 39.291 秒数
+2020-09-23 16:56:42,543 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/withdraw
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 69
+Content-Type: application/json
+
+b'{"accountName": "x1W", "cardNo": "1023457891", "changeMoney": "1000"}'
+2020-09-23 16:56:42,544 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":9999,"message":"账户余额不足:0分。","data":""}
+2020-09-23 16:56:42,570 - tools.report.log_tool - INFO - ----请求用时: 20.625 秒数
+2020-09-23 16:56:42,570 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/getAccInfo?accountName=x1W
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+None
+2020-09-23 16:56:42,571 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"查询成功","data":{"accoutId":16912,"accountName":"x1W","cstId":16922,"balance":0,"status":0,"createTime":"2020-09-23T00:56:42.000+0000","updateTime":"2020-09-23T00:56:42.000+0000","operateUserId":null}}
+2020-09-23 16:56:42,610 - tools.report.log_tool - INFO - ----请求用时: 33.045 秒数
+2020-09-23 16:56:42,611 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/accLock
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
+
+accountName=x1W
+2020-09-23 16:56:42,611 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"账户冻结成功","data":""}
+2020-09-23 16:56:42,659 - tools.report.log_tool - INFO - ----请求用时: 35.73 秒数
+2020-09-23 16:56:42,659 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/accUnLock
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
+
+accountName=x1W
+2020-09-23 16:56:42,660 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"账户解冻成功","data":""}
+2020-09-23 16:56:42,706 - tools.report.log_tool - INFO - ----请求用时: 38.293 秒数
+2020-09-23 16:56:42,706 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/recharge
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 43
+Content-Type: application/json
+
+b'{"accountName": "x1W", "changeMoney": 1000}'
+2020-09-23 16:56:42,707 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 08:56:42 GMT
+
+{"code":2000,"message":"充值成功;账户余额1000分","data":""}
+2020-09-23 17:01:17,732 - tools.report.log_tool - INFO - ----请求用时: 150.484 秒数
+2020-09-23 17:01:17,732 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:01:17,732 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:01:18 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNDc4MjI1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:02:31,128 - tools.report.log_tool - INFO - ----请求用时: 38.224 秒数
+2020-09-23 17:02:31,128 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:02:31,129 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:02:31 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNTUxNjIwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:02:56,383 - tools.report.log_tool - INFO - ----请求用时: 135.775 秒数
+2020-09-23 17:02:56,383 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:02:56,384 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:02:56 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNTc2ODYwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:02:56,405 - tools.report.log_tool - INFO - ----请求用时: 17.082 秒数
+2020-09-23 17:02:56,406 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:02:56,406 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:02:56 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:02:56,446 - tools.report.log_tool - INFO - ----请求用时: 26.15 秒数
+2020-09-23 17:02:56,446 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 151
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "h2", "productName": "h22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:02:56,449 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:02:56 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:04:07,578 - tools.report.log_tool - INFO - ----请求用时: 41.188 秒数
+2020-09-23 17:04:07,578 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:04:07,579 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:08 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNjQ4MDcwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:04:07,602 - tools.report.log_tool - INFO - ----请求用时: 19.101 秒数
+2020-09-23 17:04:07,603 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:04:07,603 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:08 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:04:07,630 - tools.report.log_tool - INFO - ----请求用时: 19.535 秒数
+2020-09-23 17:04:07,631 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzNjQ4MDcwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 151
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "h2", "productName": "h22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:04:07,631 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:08 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:04:44,293 - tools.report.log_tool - INFO - ----请求用时: 32.198 秒数
+2020-09-23 17:04:44,293 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:04:44,293 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:44 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNjg0Nzg1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:04:44,317 - tools.report.log_tool - INFO - ----请求用时: 19.238 秒数
+2020-09-23 17:04:44,317 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:04:44,317 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:44 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:04:44,337 - tools.report.log_tool - INFO - ----请求用时: 10.252 秒数
+2020-09-23 17:04:44,337 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzNjg0Nzg1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 150
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "2", "productName": "h22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:04:44,338 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:44 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:04:58,260 - tools.report.log_tool - INFO - ----请求用时: 119.247 秒数
+2020-09-23 17:04:58,260 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:04:58,261 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:58 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNjk4NzUxLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:04:58,284 - tools.report.log_tool - INFO - ----请求用时: 18.235 秒数
+2020-09-23 17:04:58,284 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:04:58,284 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:58 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:04:58,305 - tools.report.log_tool - INFO - ----请求用时: 12.027 秒数
+2020-09-23 17:04:58,305 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzNjk4NzUxLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 149
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "2", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:04:58,306 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:04:58 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:05:31,606 - tools.report.log_tool - INFO - ----请求用时: 31.76 秒数
+2020-09-23 17:05:31,607 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:05:31,607 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:05:32 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNzMyMDk4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:05:31,628 - tools.report.log_tool - INFO - ----请求用时: 16.05 秒数
+2020-09-23 17:05:31,628 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:05:31,629 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:05:32 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:05:31,650 - tools.report.log_tool - INFO - ----请求用时: 10.11 秒数
+2020-09-23 17:05:31,651 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzNzMyMDk4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 149
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "8", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:05:31,651 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:05:32 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:05:53,263 - tools.report.log_tool - INFO - ----请求用时: 117.442 秒数
+2020-09-23 17:05:53,263 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:05:53,264 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:05:53 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNzUzNzU0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:05:53,290 - tools.report.log_tool - INFO - ----请求用时: 19.607 秒数
+2020-09-23 17:05:53,291 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:05:53,291 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:05:53 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:05:53,310 - tools.report.log_tool - INFO - ----请求用时: 10.959 秒数
+2020-09-23 17:05:53,311 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzNzUzNzU0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 150
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "hh", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:05:53,311 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:05:53 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:06:28,400 - tools.report.log_tool - INFO - ----请求用时: 118.979 秒数
+2020-09-23 17:06:28,400 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:06:28,401 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:06:28 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzNzg4ODkxLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:06:28,423 - tools.report.log_tool - INFO - ----请求用时: 17.281 秒数
+2020-09-23 17:06:28,423 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:06:28,423 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:06:28 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:06:54,783 - tools.report.log_tool - INFO - ----请求用时: 121.253 秒数
+2020-09-23 17:06:54,783 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:06:54,783 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:06:55 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzODE1Mjc0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:06:54,810 - tools.report.log_tool - INFO - ----请求用时: 22.266 秒数
+2020-09-23 17:06:54,811 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:06:54,811 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:06:55 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:06:54,856 - tools.report.log_tool - INFO - ----请求用时: 33.97 秒数
+2020-09-23 17:06:54,857 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzODE1Mjc0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 149
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "8", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:06:54,857 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:06:55 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:07:27,628 - tools.report.log_tool - INFO - ----请求用时: 30.14 秒数
+2020-09-23 17:07:27,628 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:07:27,628 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:28 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzODQ4MTE4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:07:27,649 - tools.report.log_tool - INFO - ----请求用时: 16.676 秒数
+2020-09-23 17:07:27,650 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:07:27,650 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:28 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:07:27,757 - tools.report.log_tool - INFO - ----请求用时: 98.897 秒数
+2020-09-23 17:07:27,758 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzODQ4MTE4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 154
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "V3-V10", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:07:27,758 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:28 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:07:45,413 - tools.report.log_tool - INFO - ----请求用时: 35.182 秒数
+2020-09-23 17:07:45,414 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:07:45,414 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:45 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzODY1OTAzLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:07:45,448 - tools.report.log_tool - INFO - ----请求用时: 29.187 秒数
+2020-09-23 17:07:45,449 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:07:45,449 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:45 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:07:45,469 - tools.report.log_tool - INFO - ----请求用时: 10.481 秒数
+2020-09-23 17:07:45,469 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzODY1OTAzLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 150
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "22", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:07:45,469 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:45 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:07:59,374 - tools.report.log_tool - INFO - ----请求用时: 28.476 秒数
+2020-09-23 17:07:59,375 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:07:59,375 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:59 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzODc5ODY1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:07:59,400 - tools.report.log_tool - INFO - ----请求用时: 20.063 秒数
+2020-09-23 17:07:59,401 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:07:59,401 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:59 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:07:59,425 - tools.report.log_tool - INFO - ----请求用时: 12.3 秒数
+2020-09-23 17:07:59,425 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzODc5ODY1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 150
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "V2", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:07:59,425 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:07:59 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:08:17,623 - tools.report.log_tool - INFO - ----请求用时: 29.34 秒数
+2020-09-23 17:08:17,623 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:08:17,623 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:08:18 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzODk4MTEzLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:08:17,646 - tools.report.log_tool - INFO - ----请求用时: 17.992 秒数
+2020-09-23 17:08:17,646 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:08:17,647 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:08:18 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:08:38,645 - tools.report.log_tool - INFO - ----请求用时: 31.479 秒数
+2020-09-23 17:08:38,646 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:08:38,646 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:08:38 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODUzOTE5MTM1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:08:38,667 - tools.report.log_tool - INFO - ----请求用时: 17.082 秒数
+2020-09-23 17:08:38,668 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:08:38,668 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:08:38 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:08:38,697 - tools.report.log_tool - INFO - ----请求用时: 18.375 秒数
+2020-09-23 17:08:38,697 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODUzOTE5MTM1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:08:38,697 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:08:38 GMT
+
+{"code":2000,"message":"创建产品成功,产品ID为:2656。共生成商品：1件。","data":[{"skuId":null,"productCode":"L123","skuCode":"L123_黑色_1","skuName":"22黑色1","skuPrice":5000,"color":"黑色","size":"1","status":null,"createTime":null,"updateTime":null}]}
+2020-09-23 17:13:31,547 - tools.report.log_tool - INFO - ----请求用时: 118.452 秒数
+2020-09-23 17:13:31,548 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:13:31,548 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:32 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU0MjEyMDM0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:13:31,573 - tools.report.log_tool - INFO - ----请求用时: 19.492 秒数
+2020-09-23 17:13:31,573 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:13:31,574 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:32 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:13:31,607 - tools.report.log_tool - INFO - ----请求用时: 14.271 秒数
+2020-09-23 17:13:31,608 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0MjEyMDM0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:13:31,608 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:32 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:13:31,631 - tools.report.log_tool - INFO - ----请求用时: 12.93 秒数
+2020-09-23 17:13:31,631 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:13:31,634 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:32 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:13:53,968 - tools.report.log_tool - INFO - ----请求用时: 36.522 秒数
+2020-09-23 17:13:53,969 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:13:53,969 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:54 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU0MjM0NDU1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:13:53,991 - tools.report.log_tool - INFO - ----请求用时: 16.608 秒数
+2020-09-23 17:13:53,991 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:13:53,991 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:54 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:13:54,013 - tools.report.log_tool - INFO - ----请求用时: 12.71 秒数
+2020-09-23 17:13:54,013 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0MjM0NDU1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:13:54,014 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:54 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:13:54,042 - tools.report.log_tool - INFO - ----请求用时: 19.217 秒数
+2020-09-23 17:13:54,042 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0MjM0NDU1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:13:54,043 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:13:54 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:16:22,008 - tools.report.log_tool - INFO - ----请求用时: 115.28 秒数
+2020-09-23 17:16:22,008 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:16:22,008 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:22 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU0MzgyNDkzLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:16:22,038 - tools.report.log_tool - INFO - ----请求用时: 25.023 秒数
+2020-09-23 17:16:22,039 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:16:22,039 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:22 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:16:22,058 - tools.report.log_tool - INFO - ----请求用时: 11.317 秒数
+2020-09-23 17:16:22,058 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0MzgyNDkzLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:16:22,059 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:22 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:16:22,106 - tools.report.log_tool - INFO - ----请求用时: 30.532 秒数
+2020-09-23 17:16:22,106 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0MzgyNDkzLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:16:22,106 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:22 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:16:22,144 - tools.report.log_tool - INFO - ----请求用时: 14.275 秒数
+2020-09-23 17:16:22,144 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:16:22,148 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:22 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:16:57,772 - tools.report.log_tool - INFO - ----请求用时: 27.25 秒数
+2020-09-23 17:16:57,772 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:16:57,772 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:58 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU0NDE4MjU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:16:57,793 - tools.report.log_tool - INFO - ----请求用时: 16.133 秒数
+2020-09-23 17:16:57,793 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:16:57,793 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:58 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:16:57,814 - tools.report.log_tool - INFO - ----请求用时: 11.839 秒数
+2020-09-23 17:16:57,814 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NDE4MjU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:16:57,814 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:58 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:16:57,940 - tools.report.log_tool - INFO - ----请求用时: 120.078 秒数
+2020-09-23 17:16:57,941 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NDE4MjU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:16:57,941 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:58 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:16:57,975 - tools.report.log_tool - INFO - ----请求用时: 24.168 秒数
+2020-09-23 17:16:57,975 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NDE4MjU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:16:57,976 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:16:58 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:19:57,320 - tools.report.log_tool - INFO - ----请求用时: 37.744 秒数
+2020-09-23 17:19:57,321 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:19:57,321 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:19:57 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU0NTk3ODA2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:19:57,343 - tools.report.log_tool - INFO - ----请求用时: 17.06 秒数
+2020-09-23 17:19:57,344 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:19:57,344 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:19:57 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:19:57,363 - tools.report.log_tool - INFO - ----请求用时: 10.555 秒数
+2020-09-23 17:19:57,364 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NTk3ODA2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:19:57,364 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:19:57 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:19:57,398 - tools.report.log_tool - INFO - ----请求用时: 22.743 秒数
+2020-09-23 17:19:57,399 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NTk3ODA2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:19:57,399 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:19:57 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:19:57,535 - tools.report.log_tool - INFO - ----请求用时: 125.686 秒数
+2020-09-23 17:19:57,535 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NTk3ODA2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:19:57,536 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:19:57 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:19:57,563 - tools.report.log_tool - INFO - ----请求用时: 19.983 秒数
+2020-09-23 17:19:57,564 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NTk3ODA2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=v234
+2020-09-23 17:19:57,564 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:19:57 GMT
+
+{"code":9999,"message":"商品编码不存在","data":""}
+2020-09-23 17:20:27,343 - tools.report.log_tool - INFO - ----请求用时: 25.585 秒数
+2020-09-23 17:20:27,344 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:20:27,344 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:20:27 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU0NjI3ODI4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:20:27,363 - tools.report.log_tool - INFO - ----请求用时: 14.577 秒数
+2020-09-23 17:20:27,363 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:20:27,363 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:20:27 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:20:27,461 - tools.report.log_tool - INFO - ----请求用时: 89.632 秒数
+2020-09-23 17:20:27,461 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NjI3ODI4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:20:27,462 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:20:27 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:20:27,493 - tools.report.log_tool - INFO - ----请求用时: 23.609 秒数
+2020-09-23 17:20:27,493 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NjI3ODI4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:20:27,494 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:20:27 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:20:27,538 - tools.report.log_tool - INFO - ----请求用时: 32.237 秒数
+2020-09-23 17:20:27,539 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NjI3ODI4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:20:27,539 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:20:27 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:20:27,565 - tools.report.log_tool - INFO - ----请求用时: 18.155 秒数
+2020-09-23 17:20:27,566 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU0NjI3ODI4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:20:27,566 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:20:27 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:41:43,485 - tools.report.log_tool - INFO - ----请求用时: 76.965 秒数
+2020-09-23 17:41:43,487 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:41:43,487 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:41:43 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU1OTAzOTU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:41:43,532 - tools.report.log_tool - INFO - ----请求用时: 27.946 秒数
+2020-09-23 17:41:43,532 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:41:43,533 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:41:43 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:41:43,573 - tools.report.log_tool - INFO - ----请求用时: 31.127 秒数
+2020-09-23 17:41:43,574 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU1OTAzOTU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:41:43,574 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:41:43 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:41:43,605 - tools.report.log_tool - INFO - ----请求用时: 22.603 秒数
+2020-09-23 17:41:43,606 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU1OTAzOTU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:41:43,607 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:41:43 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:41:43,637 - tools.report.log_tool - INFO - ----请求用时: 22.447 秒数
+2020-09-23 17:41:43,637 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU1OTAzOTU4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:41:43,637 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:41:43 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:41:43,657 - tools.report.log_tool - INFO - ----请求用时: 12.66 秒数
+2020-09-23 17:41:43,657 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:41:43,660 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:41:43 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:44:44,551 - tools.report.log_tool - INFO - ----请求用时: 134.053 秒数
+2020-09-23 17:44:44,551 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:44:44,552 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:44:45 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2MDg1MDI0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:44:44,580 - tools.report.log_tool - INFO - ----请求用时: 23.237 秒数
+2020-09-23 17:44:44,580 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:44:44,581 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:44:45 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:45:10,322 - tools.report.log_tool - INFO - ----请求用时: 107.188 秒数
+2020-09-23 17:45:10,322 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:45:10,323 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:45:10 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2MTEwNzk1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:45:10,351 - tools.report.log_tool - INFO - ----请求用时: 22.728 秒数
+2020-09-23 17:45:10,351 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:45:10,352 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:45:10 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:45:10,377 - tools.report.log_tool - INFO - ----请求用时: 13.759 秒数
+2020-09-23 17:45:10,377 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MTEwNzk1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:45:10,377 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:45:10 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:45:10,402 - tools.report.log_tool - INFO - ----请求用时: 18.794 秒数
+2020-09-23 17:45:10,403 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MTEwNzk1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:45:10,403 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:45:10 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:45:10,435 - tools.report.log_tool - INFO - ----请求用时: 21.604 秒数
+2020-09-23 17:45:10,436 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MTEwNzk1LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:45:10,436 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:45:10 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:45:10,464 - tools.report.log_tool - INFO - ----请求用时: 18.802 秒数
+2020-09-23 17:45:10,465 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:45:10,468 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:45:10 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:46:08,161 - tools.report.log_tool - INFO - ----请求用时: 106.353 秒数
+2020-09-23 17:46:08,162 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:46:08,163 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:46:08 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2MTY4NjMyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:46:08,190 - tools.report.log_tool - INFO - ----请求用时: 18.7 秒数
+2020-09-23 17:46:08,190 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:46:08,191 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:46:08 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:46:08,221 - tools.report.log_tool - INFO - ----请求用时: 19.481 秒数
+2020-09-23 17:46:08,221 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MTY4NjMyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 152
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "L123", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:46:08,221 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:46:08 GMT
+
+{"code":9999,"message":"商品编码已存在","data":""}
+2020-09-23 17:46:08,253 - tools.report.log_tool - INFO - ----请求用时: 20.995 秒数
+2020-09-23 17:46:08,254 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MTY4NjMyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:46:08,254 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:46:08 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:46:08,285 - tools.report.log_tool - INFO - ----请求用时: 19.747 秒数
+2020-09-23 17:46:08,285 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MTY4NjMyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:46:08,285 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:46:08 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:46:08,306 - tools.report.log_tool - INFO - ----请求用时: 14.965 秒数
+2020-09-23 17:46:08,306 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:46:08,310 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:46:08 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:47:08,219 - tools.report.log_tool - INFO - ----请求用时: 115.201 秒数
+2020-09-23 17:47:08,220 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:47:08,221 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:47:08 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2MjI4Njg5LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:47:08,246 - tools.report.log_tool - INFO - ----请求用时: 17.779 秒数
+2020-09-23 17:47:08,247 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:47:08,247 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:47:08 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:47:08,265 - tools.report.log_tool - INFO - ----请求用时: 8.231 秒数
+2020-09-23 17:47:08,266 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MjI4Njg5LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 162
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "$[productCode]", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:47:08,266 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:47:08 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:47:08,299 - tools.report.log_tool - INFO - ----请求用时: 24.998 秒数
+2020-09-23 17:47:08,299 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MjI4Njg5LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:47:08,299 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:47:08 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:47:08,335 - tools.report.log_tool - INFO - ----请求用时: 26.068 秒数
+2020-09-23 17:47:08,335 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MjI4Njg5LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:47:08,335 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:47:08 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:47:08,352 - tools.report.log_tool - INFO - ----请求用时: 9.855 秒数
+2020-09-23 17:47:08,352 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:47:08,356 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:47:08 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:48:10,785 - tools.report.log_tool - INFO - ----请求用时: 134.544 秒数
+2020-09-23 17:48:10,786 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:48:10,786 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:11 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2MjkxMjQwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:48:10,818 - tools.report.log_tool - INFO - ----请求用时: 26.521 秒数
+2020-09-23 17:48:10,818 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:48:10,818 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:11 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:48:10,843 - tools.report.log_tool - INFO - ----请求用时: 15.448 秒数
+2020-09-23 17:48:10,843 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MjkxMjQwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 162
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "$[productCode]", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:48:10,844 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:11 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:48:10,887 - tools.report.log_tool - INFO - ----请求用时: 31.292 秒数
+2020-09-23 17:48:10,887 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MjkxMjQwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:48:10,887 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:11 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:48:10,913 - tools.report.log_tool - INFO - ----请求用时: 19.26 秒数
+2020-09-23 17:48:10,914 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MjkxMjQwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:48:10,914 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:11 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:48:10,931 - tools.report.log_tool - INFO - ----请求用时: 10.043 秒数
+2020-09-23 17:48:10,931 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:48:10,934 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:11 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:48:29,160 - tools.report.log_tool - INFO - ----请求用时: 144.357 秒数
+2020-09-23 17:48:29,161 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:48:29,161 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:29 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2MzA5NjAyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:48:29,196 - tools.report.log_tool - INFO - ----请求用时: 30.68 秒数
+2020-09-23 17:48:29,196 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:48:29,196 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:29 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:48:29,219 - tools.report.log_tool - INFO - ----请求用时: 11.51 秒数
+2020-09-23 17:48:29,221 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MzA5NjAyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 162
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "$[productCode]", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:48:29,222 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:29 GMT
+
+{"code":9999,"message":"产品编码只能为数字和英文；","data":""}
+2020-09-23 17:48:29,258 - tools.report.log_tool - INFO - ----请求用时: 26.836 秒数
+2020-09-23 17:48:29,258 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MzA5NjAyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:48:29,258 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:29 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:48:29,283 - tools.report.log_tool - INFO - ----请求用时: 18.607 秒数
+2020-09-23 17:48:29,283 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MzA5NjAyLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:48:29,284 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:29 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:48:29,301 - tools.report.log_tool - INFO - ----请求用时: 9.969 秒数
+2020-09-23 17:48:29,301 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:48:29,305 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:48:29 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:49:21,023 - tools.report.log_tool - INFO - ----请求用时: 27.54 秒数
+2020-09-23 17:49:21,024 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:49:21,024 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:49:21 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2MzYxNDk0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:49:21,044 - tools.report.log_tool - INFO - ----请求用时: 15.821 秒数
+2020-09-23 17:49:21,044 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:49:21,044 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:49:21 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:49:21,089 - tools.report.log_tool - INFO - ----请求用时: 35.54 秒数
+2020-09-23 17:49:21,089 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MzYxNDk0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 153
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "E5YAw", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:49:21,090 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:49:21 GMT
+
+{"code":2000,"message":"创建产品成功,产品ID为:2723。共生成商品：1件。","data":[{"skuId":null,"productCode":"E5YAw","skuCode":"E5YAw_黑色_1","skuName":"22黑色1","skuPrice":5000,"color":"黑色","size":"1","status":null,"createTime":null,"updateTime":null}]}
+2020-09-23 17:49:21,120 - tools.report.log_tool - INFO - ----请求用时: 22.94 秒数
+2020-09-23 17:49:21,120 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MzYxNDk0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:49:21,120 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:49:21 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:49:21,146 - tools.report.log_tool - INFO - ----请求用时: 19.931 秒数
+2020-09-23 17:49:21,147 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2MzYxNDk0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:49:21,147 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:49:21 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:49:21,165 - tools.report.log_tool - INFO - ----请求用时: 9.397 秒数
+2020-09-23 17:49:21,166 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:49:21,170 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:49:21 GMT
+
+{"code":9999,"data":"","message":"没有带上token"}
+2020-09-23 17:53:24,742 - tools.report.log_tool - INFO - ----请求用时: 40.633 秒数
+2020-09-23 17:53:24,742 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-23 17:53:24,742 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:53:25 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwODU2NjA1MjEwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-23 17:53:24,761 - tools.report.log_tool - INFO - ----请求用时: 14.764 秒数
+2020-09-23 17:53:24,762 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-23 17:53:24,762 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:53:25 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-23 17:53:24,791 - tools.report.log_tool - INFO - ----请求用时: 19.023 秒数
+2020-09-23 17:53:24,791 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2NjA1MjEwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 153
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "g2jO1", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-23 17:53:24,792 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:53:25 GMT
+
+{"code":2000,"message":"创建产品成功,产品ID为:2740。共生成商品：1件。","data":[{"skuId":null,"productCode":"g2jO1","skuCode":"g2jO1_黑色_1","skuName":"22黑色1","skuPrice":5000,"color":"黑色","size":"1","status":null,"createTime":null,"updateTime":null}]}
+2020-09-23 17:53:24,821 - tools.report.log_tool - INFO - ----请求用时: 22.896 秒数
+2020-09-23 17:53:24,821 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2NjA1MjEwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:53:24,822 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:53:25 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-23 17:53:24,848 - tools.report.log_tool - INFO - ----请求用时: 19.617 秒数
+2020-09-23 17:53:24,849 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2NjA1MjEwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-23 17:53:24,849 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:53:25 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-23 17:53:24,882 - tools.report.log_tool - INFO - ----请求用时: 27.422 秒数
+2020-09-23 17:53:24,883 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwODU2NjA1MjEwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-23 17:53:24,883 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 23 Sep 2020 09:53:25 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-24 14:13:04,432 - tools.report.log_tool - INFO - ----请求用时: 27.819 秒数
+2020-09-24 14:13:04,453 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-24 14:13:04,453 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:13:06 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTI5Nzg2MDI2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-24 14:13:04,473 - tools.report.log_tool - INFO - ----请求用时: 15.636 秒数
+2020-09-24 14:13:04,473 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-24 14:13:04,473 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:13:06 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-24 14:13:04,511 - tools.report.log_tool - INFO - ----请求用时: 29.941 秒数
+2020-09-24 14:13:04,512 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTI5Nzg2MDI2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 153
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "aCqRT", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-24 14:13:04,512 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:13:06 GMT
+
+{"code":2000,"message":"创建产品成功,产品ID为:2911。共生成商品：1件。","data":[{"skuId":null,"productCode":"aCqRT","skuCode":"aCqRT_黑色_1","skuName":"22黑色1","skuPrice":5000,"color":"黑色","size":"1","status":null,"createTime":null,"updateTime":null}]}
+2020-09-24 14:13:04,545 - tools.report.log_tool - INFO - ----请求用时: 23.674 秒数
+2020-09-24 14:13:04,546 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTI5Nzg2MDI2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-24 14:13:04,546 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:13:06 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-24 14:13:04,573 - tools.report.log_tool - INFO - ----请求用时: 16.762 秒数
+2020-09-24 14:13:04,573 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTI5Nzg2MDI2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-24 14:13:04,573 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:13:06 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-24 14:13:04,600 - tools.report.log_tool - INFO - ----请求用时: 19.462 秒数
+2020-09-24 14:13:04,600 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTI5Nzg2MDI2LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-24 14:13:04,600 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:13:06 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-24 14:18:02,399 - tools.report.log_tool - INFO - ----请求用时: 113.083 秒数
+2020-09-24 14:18:02,399 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-24 14:18:02,400 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTMwMDgzOTg4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-24 14:18:02,428 - tools.report.log_tool - INFO - ----请求用时: 21.086 秒数
+2020-09-24 14:18:02,428 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-24 14:18:02,428 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-24 14:18:02,456 - tools.report.log_tool - INFO - ----请求用时: 20.29 秒数
+2020-09-24 14:18:02,456 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMDgzOTg4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 153
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "0APqX", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-24 14:18:02,457 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"创建产品成功,产品ID为:2930。共生成商品：1件。","data":[{"skuId":null,"productCode":"0APqX","skuCode":"0APqX_黑色_1","skuName":"22黑色1","skuPrice":5000,"color":"黑色","size":"1","status":null,"createTime":null,"updateTime":null}]}
+2020-09-24 14:18:02,500 - tools.report.log_tool - INFO - ----请求用时: 27.542 秒数
+2020-09-24 14:18:02,501 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMDgzOTg4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-24 14:18:02,501 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-24 14:18:02,554 - tools.report.log_tool - INFO - ----请求用时: 47.348 秒数
+2020-09-24 14:18:02,554 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMDgzOTg4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-24 14:18:02,554 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-24 14:18:02,581 - tools.report.log_tool - INFO - ----请求用时: 19.081 秒数
+2020-09-24 14:18:02,581 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMDgzOTg4LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-24 14:18:02,581 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-24 14:18:02,618 - tools.report.log_tool - INFO - ----请求用时: 29.598 秒数
+2020-09-24 14:18:02,618 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/signup
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 81
+Content-Type: application/json
+
+b'{"phone": "13450548863", "pwd": "aaa123", "rePwd": "aaa123", "userName": "x1Y7N"}'
+2020-09-24 14:18:02,618 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"注册成功；用户ID:17442","data":{"userName":"x1Y7N","accoutId":17442,"cstId":17452,"userId":17442}}
+2020-09-24 14:18:02,688 - tools.report.log_tool - INFO - ----请求用时: 53.342 秒数
+2020-09-24 14:18:02,688 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 38
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "x1Y7N"}'
+2020-09-24 14:18:02,688 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTMwMDg0MjYzLCJ1c2VySWQiOjE3NDQyLCJ1c2VyTmFtZSI6IngxWTdOIn0=","userName":"x1Y7N"}}
+2020-09-24 14:18:02,732 - tools.report.log_tool - INFO - ----请求用时: 35.525 秒数
+2020-09-24 14:18:02,732 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/user/changepwd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMDg0MjYzLCJ1c2VySWQiOjE3NDQyLCJ1c2VyTmFtZSI6IngxWTdOIn0=
+Content-Length: 85
+Content-Type: application/json
+
+b'{"newPwd": "aaa1234", "oldPwd": "aaa123", "reNewPwd": "aaa1234", "userName": "x1Y7N"}'
+2020-09-24 14:18:02,732 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"修改成功1","data":""}
+2020-09-24 14:18:02,779 - tools.report.log_tool - INFO - ----请求用时: 39.694 秒数
+2020-09-24 14:18:02,780 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 39
+Content-Type: application/json
+
+b'{"pwd": "aaa1234", "userName": "x1Y7N"}'
+2020-09-24 14:18:02,780 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTMwMDg0MzcwLCJ1c2VySWQiOjE3NDQyLCJ1c2VyTmFtZSI6IngxWTdOIn0=","userName":"x1Y7N"}}
+2020-09-24 14:18:02,820 - tools.report.log_tool - INFO - ----请求用时: 34.147 秒数
+2020-09-24 14:18:02,820 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/getBills?accountName=x1Y7N
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+None
+2020-09-24 14:18:02,821 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"查询成功","data":[]}
+2020-09-24 14:18:02,852 - tools.report.log_tool - INFO - ----请求用时: 26.881 秒数
+2020-09-24 14:18:02,852 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/withdraw
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 71
+Content-Type: application/json
+
+b'{"accountName": "x1Y7N", "cardNo": "1023457891", "changeMoney": "1000"}'
+2020-09-24 14:18:02,853 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":9999,"message":"账户余额不足:0分。","data":""}
+2020-09-24 14:18:02,881 - tools.report.log_tool - INFO - ----请求用时: 22.693 秒数
+2020-09-24 14:18:02,881 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/getAccInfo?accountName=x1Y7N
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+None
+2020-09-24 14:18:02,881 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"查询成功","data":{"accoutId":17442,"accountName":"x1Y7N","cstId":17452,"balance":0,"status":0,"createTime":"2020-09-23T22:18:04.000+0000","updateTime":"2020-09-23T22:18:04.000+0000","operateUserId":null}}
+2020-09-24 14:18:02,925 - tools.report.log_tool - INFO - ----请求用时: 37.37 秒数
+2020-09-24 14:18:02,925 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/accLock
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 17
+Content-Type: application/x-www-form-urlencoded
+
+accountName=x1Y7N
+2020-09-24 14:18:02,925 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"账户冻结成功","data":""}
+2020-09-24 14:18:02,973 - tools.report.log_tool - INFO - ----请求用时: 41.19 秒数
+2020-09-24 14:18:02,973 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/accUnLock
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 17
+Content-Type: application/x-www-form-urlencoded
+
+accountName=x1Y7N
+2020-09-24 14:18:02,973 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"账户解冻成功","data":""}
+2020-09-24 14:18:03,017 - tools.report.log_tool - INFO - ----请求用时: 37.801 秒数
+2020-09-24 14:18:03,018 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/recharge
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 45
+Content-Type: application/json
+
+b'{"accountName": "x1Y7N", "changeMoney": 1000}'
+2020-09-24 14:18:03,018 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:18:03 GMT
+
+{"code":2000,"message":"充值成功;账户余额1000分","data":""}
+2020-09-24 14:19:50,014 - tools.report.log_tool - INFO - ----请求用时: 42.631 秒数
+2020-09-24 14:19:50,015 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-24 14:19:50,015 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:19:51 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTMwMTkxNjA0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-24 14:19:50,041 - tools.report.log_tool - INFO - ----请求用时: 20.351 秒数
+2020-09-24 14:19:50,041 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 44
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "${username}"}'
+2020-09-24 14:19:50,041 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:19:51 GMT
+
+{"code":9999,"message":"登录失败,用户名不存在","data":""}
+2020-09-24 14:19:50,071 - tools.report.log_tool - INFO - ----请求用时: 22.409 秒数
+2020-09-24 14:19:50,071 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/addProd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMTkxNjA0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 153
+Content-Type: application/json
+
+b'{"brand": "\\u5c0f\\u7c73", "colors": ["\\u9ed1\\u8272"], "price": 5000, "productCode": "rPHLe", "productName": "22", "sizes": ["1"], "type": "\\u6570\\u7801"}'
+2020-09-24 14:19:50,072 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:19:51 GMT
+
+{"code":2000,"message":"创建产品成功,产品ID为:2938。共生成商品：1件。","data":[{"skuId":null,"productCode":"rPHLe","skuCode":"rPHLe_黑色_1","skuName":"22黑色1","skuPrice":5000,"color":"黑色","size":"1","status":null,"createTime":null,"updateTime":null}]}
+2020-09-24 14:19:50,115 - tools.report.log_tool - INFO - ----请求用时: 36.487 秒数
+2020-09-24 14:19:50,115 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/soldOut
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMTkxNjA0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-24 14:19:50,116 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:19:51 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-24 14:19:50,156 - tools.report.log_tool - INFO - ----请求用时: 33.052 秒数
+2020-09-24 14:19:50,157 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/changePriceByProdCode
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMTkxNjA0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 24
+Content-Type: application/x-www-form-urlencoded
+
+price=4500&prodCode=L123
+2020-09-24 14:19:50,157 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:19:51 GMT
+
+{"code":2000,"message":"价格更新成功，更新了1件商品。","data":""}
+2020-09-24 14:19:50,192 - tools.report.log_tool - INFO - ----请求用时: 26.673 秒数
+2020-09-24 14:19:50,192 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/product/toPreSale
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwMTkxNjA0LCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=
+Content-Length: 16
+Content-Type: application/x-www-form-urlencoded
+
+productCode=L123
+2020-09-24 14:19:50,192 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:19:51 GMT
+
+{"code":2000,"message":"产品更新成功1条；商品更新1条。","data":""}
+2020-09-24 14:25:58,242 - tools.report.log_tool - INFO - ----请求用时: 134.482 秒数
+2020-09-24 14:25:58,243 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "zzz777", "userName": "zh6"}'
+2020-09-24 14:25:58,243 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTMwNTU5ODMwLCJ1c2VySWQiOjU0NzEsInVzZXJOYW1lIjoiemg2In0=","userName":"zh6"}}
+2020-09-24 14:25:58,284 - tools.report.log_tool - INFO - ----请求用时: 37.115 秒数
+2020-09-24 14:25:58,285 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/signup
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 79
+Content-Type: application/json
+
+b'{"phone": "13203943712", "pwd": "aaa123", "rePwd": "aaa123", "userName": "x13"}'
+2020-09-24 14:25:58,285 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"注册成功；用户ID:17476","data":{"userName":"x13","accoutId":17476,"cstId":17486,"userId":17476}}
+2020-09-24 14:25:58,320 - tools.report.log_tool - INFO - ----请求用时: 25.816 秒数
+2020-09-24 14:25:58,321 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 36
+Content-Type: application/json
+
+b'{"pwd": "aaa123", "userName": "x13"}'
+2020-09-24 14:25:58,321 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTMwNTU5OTA4LCJ1c2VySWQiOjE3NDc2LCJ1c2VyTmFtZSI6IngxMyJ9","userName":"x13"}}
+2020-09-24 14:25:58,360 - tools.report.log_tool - INFO - ----请求用时: 30.707 秒数
+2020-09-24 14:25:58,360 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/user/changepwd
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+token: eyJ0aW1lT3V0IjoxNjAwOTMwNTU5OTA4LCJ1c2VySWQiOjE3NDc2LCJ1c2VyTmFtZSI6IngxMyJ9
+Content-Length: 83
+Content-Type: application/json
+
+b'{"newPwd": "aaa1234", "oldPwd": "aaa123", "reNewPwd": "aaa1234", "userName": "x13"}'
+2020-09-24 14:25:58,361 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"修改成功1","data":""}
+2020-09-24 14:25:58,404 - tools.report.log_tool - INFO - ----请求用时: 33.336 秒数
+2020-09-24 14:25:58,404 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 37
+Content-Type: application/json
+
+b'{"pwd": "aaa1234", "userName": "x13"}'
+2020-09-24 14:25:58,404 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"登录成功","data":{"token":"eyJ0aW1lT3V0IjoxNjAwOTMwNTU5OTkxLCJ1c2VySWQiOjE3NDc2LCJ1c2VyTmFtZSI6IngxMyJ9","userName":"x13"}}
+2020-09-24 14:25:58,444 - tools.report.log_tool - INFO - ----请求用时: 32.91 秒数
+2020-09-24 14:25:58,445 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/getBills?accountName=x13
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+None
+2020-09-24 14:25:58,445 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"查询成功","data":[]}
+2020-09-24 14:25:58,481 - tools.report.log_tool - INFO - ----请求用时: 30.269 秒数
+2020-09-24 14:25:58,481 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/withdraw
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 69
+Content-Type: application/json
+
+b'{"accountName": "x13", "cardNo": "1023457891", "changeMoney": "1000"}'
+2020-09-24 14:25:58,481 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":9999,"message":"账户余额不足:0分。","data":""}
+2020-09-24 14:25:58,512 - tools.report.log_tool - INFO - ----请求用时: 24.561 秒数
+2020-09-24 14:25:58,513 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/getAccInfo?accountName=x13
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+None
+2020-09-24 14:25:58,513 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"查询成功","data":{"accoutId":17476,"accountName":"x13","cstId":17486,"balance":0,"status":0,"createTime":"2020-09-23T22:25:59.000+0000","updateTime":"2020-09-23T22:25:59.000+0000","operateUserId":null}}
+2020-09-24 14:25:58,552 - tools.report.log_tool - INFO - ----请求用时: 32.779 秒数
+2020-09-24 14:25:58,552 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/accLock
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
+
+accountName=x13
+2020-09-24 14:25:58,552 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"账户冻结成功","data":""}
+2020-09-24 14:25:58,595 - tools.report.log_tool - INFO - ----请求用时: 32.75 秒数
+2020-09-24 14:25:58,596 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/accUnLock
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 15
+Content-Type: application/x-www-form-urlencoded
+
+accountName=x13
+2020-09-24 14:25:58,596 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"账户解冻成功","data":""}
+2020-09-24 14:25:58,643 - tools.report.log_tool - INFO - ----请求用时: 40.915 秒数
+2020-09-24 14:25:58,643 - tools.report.log_tool - INFO - -------------------request-------------
+http://qa.yansl.com:8084/acc/recharge
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 43
+Content-Type: application/json
+
+b'{"accountName": "x13", "changeMoney": 1000}'
+2020-09-24 14:25:58,643 - tools.report.log_tool - INFO - ---------------response----------------
+200
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Sep 2020 06:25:59 GMT
+
+{"code":2000,"message":"充值成功;账户余额1000分","data":""}
